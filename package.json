@@ -1,0 +1,18 @@
+{
+  "name": "cordova-plugin-repleace-main",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-repleace-main",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Paulo Cesar Camilo",
+  "license": "ISC"
+}
