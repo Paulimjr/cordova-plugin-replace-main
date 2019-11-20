@@ -1,9 +1,10 @@
-package com.outsystems.experts;
+package outsystems.experts;
 
 import android.content.Intent;
 import android.os.Bundle;
+import org.apache.cordova.*;
 
-public class OtherMainActivity extends MainActivity {
+public class OtherMainActivity extends CordovaActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState)

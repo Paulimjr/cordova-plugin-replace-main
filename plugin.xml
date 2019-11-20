@@ -13,8 +13,9 @@
     </js-module>
 
     <platform name="android">
+
         <!-- Hooks to replace MainActivity on Cordova Platfrom -->
-       <hook type="after_plugin_add" src="scripts/updateMainActivity.js" />
+         <hook type="after_plugin_add" src="scripts/updateMainActivity.js" />
         
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="RepleaceMainPlugin">
@@ -22,16 +23,12 @@
             </feature>
         </config-file>
 
-        <!-- Add OtherMainActivity to extends MainActivity.java -->    
-        <config-file parent="/*" target="AndroidManifest.xml">
-        </config-file>
-
         <!-- Add MainActivity to manifest to be referenced -->    
          <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name=".MainActivity" />
         </config-file>
 
-        <source-file src="src/android/OtherMainActivity.java" target-dir="src/com/outsystems/experts" />
+        <source-file src="src/android/OtherMainActivity.java" target-dir="src/outsystems/experts" />
 
         <!-- IMPORTANT Notes: If you change the name of the OtherMainActivity.java class OR target-dir declared above, 
             REMEMBER: go to 'updateMainActivity.js' into scripts folder and change the variable value -> updateMainActivity -->
