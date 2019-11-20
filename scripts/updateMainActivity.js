@@ -1,5 +1,4 @@
 var fs = require('fs'), path = require('path');
-var REPLEACEMENT_MAIN = "";
 
 module.exports = function(context) {
     

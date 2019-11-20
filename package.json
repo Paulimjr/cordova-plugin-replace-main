@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-repleace-main",
+  "name": "cordova-plugin-replace-main",
   "version": "1.0.0",
   "description": "",
   "cordova": {
-    "id": "cordova-plugin-repleace-main",
+    "id": "cordova-plugin-replace-main",
     "platforms": [
       "ios",
       "android"
@@ -11,7 +11,9 @@
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "replace-activity",
+    "replacement"
   ],
   "author": "Paulo Cesar Camilo",
   "license": "ISC"

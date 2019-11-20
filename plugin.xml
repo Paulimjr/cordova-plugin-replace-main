@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-repleace-main" version="1.0.0">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-replace-main" version="1.0.0">
     
-    <name>Repleace Main Activity Plugin</name>
-    <description>Repleace Main Activity Plugin for Cordova</description>
+    <name>Replace Main Activity Plugin</name>
+    <description>Replace Main Activity Plugin for Cordova</description>
     
     <author>Paulo Cesar Camilo</author>
         
-    <js-module name="RepleaceMainPlugin" src="www/RepleaceMainPlugin.js">
-        <clobbers target="cordova.plugins.RepleaceMainPlugin" />
+    <js-module name="ReplaceMainPlugin" src="www/ReplaceMainPlugin.js">
+        <clobbers target="cordova.plugins.ReplaceMainPlugin" />
     </js-module>
 
     <platform name="android">
@@ -18,8 +18,8 @@
          <hook type="after_plugin_add" src="scripts/updateMainActivity.js" />
         
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="RepleaceMainPlugin">
-                <param name="android-package" value="cordova.plugins.RepleaceMainPlugin" />
+            <feature name="ReplaceMainPlugin">
+                <param name="android-package" value="cordova.plugins.ReplaceMainPlugin" />
             </feature>
         </config-file>
 
