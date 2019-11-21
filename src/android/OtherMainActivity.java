@@ -2,6 +2,8 @@ package outsystems.experts;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import org.apache.cordova.*;
 
 public class OtherMainActivity extends CordovaActivity {
@@ -17,11 +19,13 @@ public class OtherMainActivity extends CordovaActivity {
             moveTaskToBack(true);
         }
         // Set by <content src="index.html" /> in config.xml
+        Toast.makeText(this, "Toast onCreate method!!!", Toast.LENGTH_SHORT).show();
         loadUrl(launchUrl);
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+        Toast.makeText(this, "Toast onNewIntent method!!!", Toast.LENGTH_SHORT).show();
     }
 }
