@@ -19,7 +19,7 @@
         
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ReplaceMainPlugin">
-                <param name="android-package" value="cordova.plugins.ReplaceMainPlugin" />
+                <param name="android-package" value="outsystems.experts.ReplaceMainPlugin" />
             </feature>
         </config-file>
 
@@ -29,6 +29,7 @@
         </config-file>
 
         <source-file src="src/android/OtherMainActivity.java" target-dir="src/outsystems/experts" />
+        <source-file src="src/android/ReplaceMainPlugin.java" target-dir="src/outsystems/experts" />
 
         <!-- IMPORTANT Notes: If you change the name of the OtherMainActivity.java class OR target-dir declared above, 
             REMEMBER: go to 'updateMainActivity.js' into scripts folder and change the variable value -> updateMainActivity -->
